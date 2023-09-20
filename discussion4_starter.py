@@ -39,7 +39,10 @@ class Rectangle():
     # Otherwise, it returns the area of the rectangle.
 
     # YOUR CODE HERE
-
+    def area(self):
+        if not(self.valid_input(self)):
+            return "Invalid input"
+        return self.width * self.height
 
 
     # Create the "perimeter" method
